@@ -1,38 +1,88 @@
 .App {
-  text-align: center;
+  background-color: #ffeed5;
+  padding: 50px 100px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #ffeed5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home {
+  h1 {
+    text-align: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
+  margin-top: 50px;
+  button {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* vocablist */
+.vocablist {
+  width: 800px;
+  .check-filter {
+    display: flex;
+    Form {
+      margin: 10px 100px;
+      margin-left: 0px;
+    }
+  }
+  .list-title {
+    display: flex;
+  }
+}
+
+.list {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  li {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.japanese,
+.english,
+.delete-button {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  ul {
+    padding: 10px;
+  }
+  li {
+    width: 200px;
+    text-align: center;
+    margin: 10px 10px 10px -10px;
+    .meanlist,
+    .vocablist {
+      width: 200px;
+      text-align: center;
+    }
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.td-button {
+  position: relative;
+  background-color: #4caf50; /* 背景色 */
+  color: white; /* 文字色 */
+  padding: 2px 5px; /* パディング */
+  text-align: center; /* 文字のアライメント */
+  text-decoration: none; /* 文字装飾 */
+  display: inline-block; /* ボタンの表示方法 */
+  font-size: 16px; /* フォントサイズ */
+  font-family: Arial, sans-serif; /* フォント */
+  margin: 4px 2px; /* 外側の余白 */
+  cursor: pointer; /* カーソル */
+  border: none; /* ボーダーなし */
+  border-radius: 5px; /* ボタンの角丸 */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* 影 */
+  transition: transform 0.1s ease-in-out; /* トランジション */
+}
+
+.td-button:active {
+  transform: translateY(2px); /* 移動 */
 }
