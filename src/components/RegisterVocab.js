@@ -12,30 +12,11 @@ const RegisterVocab = (props) => {
     props.setList(newVocabrary);
     props.setModal(false);
   };
-  const modalContent = {
-    background: "white",
-    width: "200px",
-    padding: "10px",
-    borderRadius: "3px",
-    alignItems: "center",
-  };
-
-  const overlay = {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(0,0,0,0.5)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  };
   return (
     <>
       {props.showFlag ? (
-        <div className="overlay" style={overlay}>
-          <div className="modalContent" style={modalContent}>
+        <div className="overlay">
+          <div className="modalContent">
             <input type="button" value="close" onClick={closeModal} />
             <form action="submit">
               <label>english</label>

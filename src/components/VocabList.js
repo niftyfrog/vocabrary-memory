@@ -39,19 +39,19 @@ const VocabList = (props) => {
       </div>
       <div className="list-title">
         <div className="japanese">
-          <h3>日本語</h3>
+          <h3>English</h3>
           <ul>
             {props.list.map((vocab, index) => (
               <div className="list">
                 <li key={index}>
-                  <div className="vocablist">{vocabView && `${vocab.単語}`}</div>
+                  <div className="vocablist">{vocabView ? `${vocab.単語}` : " "}</div>
                 </li>
               </div>
             ))}
           </ul>
         </div>
         <div className="english">
-          <h3>English</h3>
+          <h3>日本語</h3>
           <ul>
             {props.list.map((vocab, index) => (
               <div className="list">
